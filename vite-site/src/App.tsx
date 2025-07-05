@@ -1,9 +1,74 @@
 import { Button } from "@/components/ui/button"
+import {
+	Card,
+	CardAction, 
+	CardContent, 
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card"
+import {
+	NavigationMenu,
+	NavigationMenuContent,
+	NavigationMenuIndicator,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+	NavigationMenuTrigger,
+	NavigationMenuViewport,
+}
+from "@/components/ui/navigation-menu"
+
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+					//<ListItem href="" title="">Mohammed Maalin</ListItem>
 
 function App() {
 	return (
-		<div className="flex min-h-svh flex-col items-center justify-center">
-			<Button>click me</Button>
+		<div className="flex min-h-svh flex-col">
+			<NavigationMenu>
+				<NavigationMenuList>
+					<NavigationMenuItem>
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-xl" href="/">
+							mohammed maalin
+						</NavigationMenuLink>
+					</NavigationMenuItem>
+					<NavigationMenuItem>
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="/">
+							about
+						</NavigationMenuLink>
+					</NavigationMenuItem>
+					<NavigationMenuItem>
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="/">
+							projects
+						</NavigationMenuLink>
+					</NavigationMenuItem>
+					<NavigationMenuItem>
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="/">
+							experience
+						</NavigationMenuLink>
+					</NavigationMenuItem>
+					<NavigationMenuItem>
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="/">
+							contact
+						</NavigationMenuLink>
+					</NavigationMenuItem>
+				</NavigationMenuList>
+			</NavigationMenu>
+			<div className="flex min-h-svh flex-col items-center justify-center">
+			<Card className="w-full max-w-sm">
+			<CardHeader></CardHeader>
+			<CardTitle></CardTitle>
+			<CardContent>
+				<Button variant="outline">
+					<p className="tracking-tight scroll-m-20 font-semibold text-xl">
+						hi
+					</p> 
+				</Button>
+			</CardContent>
+			</Card>
+			</div>
 		</div>
 	)
 
