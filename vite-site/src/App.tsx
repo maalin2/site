@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import earth from "@/assets/earth.gif"
 import {
 	Card,
 	CardAction, 
@@ -26,7 +27,7 @@ import { Label } from "@/components/ui/label"
 
 function App() {
 	return (
-		<div className="flex min-h-svh flex-col">
+		<div className="flex flex-col">
 			<NavigationMenu>
 				<NavigationMenuList>
 					<NavigationMenuItem>
@@ -56,18 +57,30 @@ function App() {
 					</NavigationMenuItem>
 				</NavigationMenuList>
 			</NavigationMenu>
-			<div className="flex min-h-svh flex-col items-center justify-center">
-			<Card className="w-full max-w-sm">
-			<CardHeader></CardHeader>
-			<CardTitle></CardTitle>
-			<CardContent>
-				<Button variant="outline">
-					<p className="tracking-tight scroll-m-20 font-semibold text-xl">
+			<div className="flex flex-col items-center justify-center">
+			</div>
+			<div>
+				<div className="flex ">
+					<div className="w-7/10 p-6 relative">
+						<Card className="w-full max-w-sm">
+						<CardHeader></CardHeader>
+						<CardTitle></CardTitle>
+						<CardContent>
+							<Button variant="outline">
+								<p className="tracking-tight scroll-m-20 font-semibold text-xl">
+									hi
+								</p> 
+							</Button>
+						</CardContent>
+						</Card>
 						hi
-					</p> 
-				</Button>
-			</CardContent>
-			</Card>
+					</div>
+					<div className="w-3/10 flex justify-center items-center">
+						<img
+							src={earth}
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	)
