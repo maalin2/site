@@ -63,17 +63,18 @@ function App() {
 				<div className="flex ">
 					<div className="w-7/10 p-6 relative">
 						<Card className="w-full max-w-sm">
-						<CardHeader></CardHeader>
-						<CardTitle></CardTitle>
+						<CardHeader>
+
+							<CardTitle>
+
+								hello!
+			 			      </CardTitle>
+
+						</CardHeader>
 						<CardContent>
-							<Button variant="outline">
-								<p className="tracking-tight scroll-m-20 font-semibold text-xl">
-									hi
-								</p> 
-							</Button>
+							hi
 						</CardContent>
 						</Card>
-						hi
 					</div>
 					<div className="w-3/10 flex justify-center items-center">
 						<img
