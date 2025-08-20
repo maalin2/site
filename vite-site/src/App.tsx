@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import earth from "@/assets/earth.gif"
+import resume from "@/assets/resume.pdf"
 import {
 	Card,
 	CardAction, 
@@ -51,6 +52,11 @@ function App() {
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href={resume}>
+							resume
+						</NavigationMenuLink>
+					</NavigationMenuItem>
+					<NavigationMenuItem>
 						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="/">
 							contact
 						</NavigationMenuLink>
@@ -60,8 +66,8 @@ function App() {
 			<div className="flex flex-col items-center justify-center">
 			</div>
 			<div>
-				<div className="flex ">
-					<div className="w-7/10 p-6 relative">
+				<div className="flex">
+					<div className="w-6/10 p-6 relative">
 						<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
       hello!
     </h2>
@@ -70,19 +76,54 @@ function App() {
     </p>
 	<br/>
 	<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-      education
+      experience
     </h2>
     <p>
 	hi...
     </p>
+    <br/>
+    	<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+      projects
+    </h2>
+        <div className="grid grid-cols-3 gap-4">
+    	 <Card className="w-full max-w-sm">
+	       <CardHeader>
+			<CardTitle>
+				hello!
+			</CardTitle>
 
-					<Card className="w-full max-w-sm">
-						<CardHeader>
+						</CardHeader>
+						<CardContent>
+							hi
+						</CardContent>
+						</Card>
+   	 <Card className="w-full max-w-sm">
+	       <CardHeader>
+			<CardTitle>
+				hello!
+			</CardTitle>
 
-							<CardTitle>
+						</CardHeader>
+						<CardContent>
+							hi
+						</CardContent>
+						</Card>
+   	 <Card className="w-full max-w-sm">
+	       <CardHeader>
+			<CardTitle>
+				hello!
+			</CardTitle>
 
-								hello!
-			 			      </CardTitle>
+						</CardHeader>
+						<CardContent>
+							hi
+						</CardContent>
+						</Card>
+   	 <Card className="w-full max-w-sm">
+	       <CardHeader>
+			<CardTitle>
+				hello!
+			</CardTitle>
 
 						</CardHeader>
 						<CardContent>
@@ -90,9 +131,22 @@ function App() {
 						</CardContent>
 						</Card>
 	
+y
+    </div>
+    <br/>
+ 	<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+	contact
+    </h2>
+    <p>
+	hi...
+    </p>
+   
+
+
+				
 
 </div>
-					<div className="w-3/10 flex justify-center items-center">
+					<div className="w-4/10 flex justify-center items-center">
 						<img
 							src={earth}
 						/>
