@@ -62,7 +62,21 @@ function App() {
 			<div>
 				<div className="flex ">
 					<div className="w-7/10 p-6 relative">
-						<Card className="w-full max-w-sm">
+						<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+      hello!
+    </h2>
+    <p>
+	hi...
+    </p>
+	<br/>
+	<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+      education
+    </h2>
+    <p>
+	hi...
+    </p>
+
+					<Card className="w-full max-w-sm">
 						<CardHeader>
 
 							<CardTitle>
@@ -75,7 +89,9 @@ function App() {
 							hi
 						</CardContent>
 						</Card>
-					</div>
+	
+
+</div>
 					<div className="w-3/10 flex justify-center items-center">
 						<img
 							src={earth}
