@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import earth from "@/assets/earth.gif"
 import resume from "@/assets/resume.pdf"
+import wf from "@/assets/wf.png"
+import cm from "@/assets/cm.png"
 import {
 	Card,
 	CardAction, 
@@ -69,19 +71,41 @@ function App() {
 				<div className="flex">
 					<div className="w-6/10 p-6 relative">
 						<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-      hello!
+      Hello!
     </h2>
     <p>
-	hi...
+	My name is Mohammed Maalin. I'm a senior at <span className="font-semibold text-red-600">The Ohio State University</span> studying Computer Science and Engineering, with a specialization in Artificial Intelligence. 
+		
+	<br/><br/>
+	
+	I've been programming since middle school, building small games and making websites, and have a lot of experience building full-stack apps and AI systems. When I'm not programming, I love watching films, listening to music, playing chess and reading about technology and business.
     </p>
 	<br/>
 	<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
       experience
     </h2>
-    <p>
-	hi...
-    </p>
-    <br/>
+    <div className="space-y-4">
+    	<div className="flex items-start space-x-4">
+		<div className="w-3/10">
+		      <img src={wf}/>
+		</div>
+		<div className="w-7/10">
+		      <p>
+			I recently finished a <span className="font-semibold">Software Engineering internship at Wells Fargo</span>, where I built internal AI agents to improve CI/CD processes, and worked on smart contracts as part of the Distributed Ledger Technology team.
+		      </p>
+		</div>
+	</div>
+    	<div className="flex items-start space-x-4">
+		<div className="w-3/10">
+		      <img src={cm}/>
+		</div>
+		<div className="w-7/10">
+		      <p>
+			Previously, I was at <span className="font-semibold">the College of Medicine at Ohio State as a Research Assistant</span> where I built ETL systems and web scrapers to improve survey outreach.
+		      </p>
+		</div>
+	</div>
+    </div>
     	<h2 className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
       projects
     </h2>
@@ -138,7 +162,10 @@ y
 	contact
     </h2>
     <p>
-	hi...
+	You can email me at <code>hello @ [website]</code>.
+	<br/>
+	My linkedin is <a className="underline text-blue-500" href="https://www.linkedin.com/in/mmaalin">here</a>.
+
     </p>
    
 
