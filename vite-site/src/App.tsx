@@ -1,32 +1,20 @@
-import { Button } from "@/components/ui/button"
 import earth from "@/assets/earth.gif"
 import resume from "@/assets/resume.pdf"
 import wf from "@/assets/wf.png"
 import cm from "@/assets/cm.png"
 import {
 	Card,
-	CardAction, 
 	CardContent, 
-	CardDescription,
-	CardFooter,
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card"
 import {
 	NavigationMenu,
-	NavigationMenuContent,
-	NavigationMenuIndicator,
 	NavigationMenuItem,
 	NavigationMenuLink,
 	NavigationMenuList,
-	NavigationMenuTrigger,
-	NavigationMenuViewport,
 }
 from "@/components/ui/navigation-menu"
-
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-					//<ListItem href="" title="">Mohammed Maalin</ListItem>
 
 function App() {
 	return (
