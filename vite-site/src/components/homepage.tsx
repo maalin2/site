@@ -128,7 +128,7 @@ export default function HomePage() {
 									</p>
 
 									<br/>
-									You can try it out <a className="underline text-blue-500" href="https://flash-clone-3.vercel.app/">here</a>. 
+									You can try it out <a className="underline text-blue-500" href="/clone">here</a>. 
 							</div>
 						</CardContent>
 						</Card>
