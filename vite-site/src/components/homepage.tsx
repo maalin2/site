@@ -23,7 +23,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, description }: ProjectCardProps) {
 	return (
-		<Card className="w-full max-w-sm">
+		<Card className="text-xs max-h-xs gap-0 md:text-base">
 			<CardHeader>
 				<CardTitle>{title}</CardTitle>
 			</CardHeader>
@@ -54,36 +54,36 @@ function ExperienceItem({ image, description }: ExperienceItemProps) {
 
 function Navigation() {
 	return (
-		<div className="bg-white fixed w-full z-50">
+		<div className="bg-white fixed w-full z-50 pb-2 md:pb-4">
 			<NavigationMenu>
 				<NavigationMenuList>
 					<NavigationMenuItem>
-						<NavigationMenuLink id="home" className="tracking-tight scroll-m-20 font-semibold text-xl" href="/">
+						<NavigationMenuLink id="home" className="tracking-tight scroll-m-20 font-semibold text-xs md:text-xl" href="/">
 							mohammed maalin
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink className="tracking-tight scroll-mt-20 font-semibold text-lg" href="#about">
+						<NavigationMenuLink className="tracking-tight scroll-mt-20 font-semibold text-xs md:text-lg" href="#about">
 							about
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="#exp">
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-xs md:text-lg" href="#exp">
 							experience
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="#projects">
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-xs md:text-lg" href="#projects">
 							projects
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href={resume}>
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-xs md:text-lg" href={resume}>
 							resume
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="#contact">
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-xs md:text-lg" href="#contact">
 							contact
 						</NavigationMenuLink>
 					</NavigationMenuItem>
@@ -96,7 +96,7 @@ function Navigation() {
 function About() {
 	return (
 		<>
-			<h2 id="about" className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+			<h2 id="about" className="scroll-m-20  pb-2 text-xl md:text-3xl font-semibold tracking-tight first:mt-0">
 				about
 			</h2>
 			Hello! I'm a senior at <span className="font-semibold text-red-600">The Ohio State University</span> studying Computer Science and Engineering, with a specialization in Artificial Intelligence.
@@ -112,7 +112,7 @@ function About() {
 function Experience() {
 	return (
 		<>
-			<h2 id="exp" className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+			<h2 id="exp" className="scroll-m-20  pb-2 text-xl md:text-3xl font-semibold tracking-tight first:mt-0">
 				experience
 			</h2>
 			<div className="space-y-4">
@@ -133,7 +133,7 @@ function Experience() {
 function Projects() {
 	return (
 		<>
-			<h2 id="projects" className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+			<h2 id="projects" className="scroll-m-20  pb-2 text-xl md:text-3xl font-semibold tracking-tight first:mt-0">
 				projects
 			</h2>
 			<div>
@@ -141,7 +141,7 @@ function Projects() {
 				<p>In the future as I build more projects you'll be able to find some devposts here.</p>
 				<br/>
 			</div>
-			<div className="grid grid-cols-3 gap-4">
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4">
 				<ProjectCard
 					title="Adobe Flash clone"
 					description={<>I started coding making Flash games and animations. Recreating Flash as a webapp with Next.js and HTML5 Canvas was a rewarding full-circle moment. Try it out <a className="underline text-blue-500" href="/clone">here</a>.</>}
@@ -171,7 +171,7 @@ function Projects() {
 function Contact() {
 	return (
 		<>
-			<h2 id="contact" className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+			<h2 id="contact" className="scroll-m-20  pb-2 text-xl md:text-3xl font-semibold tracking-tight first:mt-0">
 				contact
 			</h2>
 			<p>
@@ -187,18 +187,16 @@ export default function HomePage() {
 	return (
 		<div className="relative flex flex-col">
 			<Navigation />
-			<div className="flex flex-col items-center justify-center">
-				<div className="flex pt-7">
-					<div className="w-6/10 p-6 relative">
+			<div className="flex flex-col items-center justify-center pt-12 md:pt-12">
+				<div className="flex">
+					<div className="w-full md:w-6/10 p-3 md:p-6 relative text-xs md:text-base">
 						<About />
 						<Experience />
 						<Projects />
 						<Contact />
 					</div>
-					<div className="fixed right-0 top-20 w-4/10 h-auto z-40">
-						<div className="flex justify-center">
-							<img src={earth} />
-						</div>
+					<div className="hidden md:flex fixed right-0 top-20 w-4/10 h-auto z-40 justify-center">
+						<img src={earth} />
 					</div>
 				</div>
 			</div>
