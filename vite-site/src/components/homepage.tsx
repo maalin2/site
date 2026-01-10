@@ -68,13 +68,13 @@ function Navigation() {
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="#projects">
-							projects
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="#exp">
+							experience
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="#exp">
-							experience
+						<NavigationMenuLink className="tracking-tight scroll-m-20 font-semibold text-lg" href="#projects">
+							projects
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
@@ -97,9 +97,9 @@ function About() {
 	return (
 		<>
 			<h2 id="about" className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-				Hello!
+				about
 			</h2>
-			I'm a senior at <span className="font-semibold text-red-600">The Ohio State University</span> studying Computer Science and Engineering, with a specialization in Artificial Intelligence.
+			Hello! I'm a senior at <span className="font-semibold text-red-600">The Ohio State University</span> studying Computer Science and Engineering, with a specialization in Artificial Intelligence.
 
 			<br/><br/>
 
