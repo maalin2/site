@@ -103,7 +103,7 @@ function About() {
 
 			<br/><br/>
 
-			I've been programming since middle school, building small games and making websites, and have a lot of experience building full-stack apps and AI systems. When I'm not building personal projects or studying, I love watching films, and playing chess.
+			I've been programming since middle school, building small games and making websites, and have a lot of experience building full-stack apps and AI systems. When I'm not building personal projects or studying, I love watching films and playing chess.
 			<br/><br/>
 		</>
 	);
@@ -118,7 +118,7 @@ function Experience() {
 			<div className="space-y-4">
 				<ExperienceItem
 					image={wf}
-					description={<>In summer 2025, I was a <span className="font-semibold">Software Engineering intern at Wells Fargo</span>, where I built internal AI agents to improve CI/CD processes and make project manager's lives easier. I also worked on smart contracts as part of the Distributed Ledger Technology team.</>}
+					description={<>In summer 2025, I was a <span className="font-semibold">Software Engineering Intern at Wells Fargo</span>, where I built internal AI agents to improve CI/CD processes and make project manager's lives easier. I also worked on smart contracts as part of the Distributed Ledger Technology team.</>}
 				/>
 				<ExperienceItem
 					image={cm}
@@ -144,7 +144,7 @@ function Projects() {
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4">
 				<ProjectCard
 					title="Adobe Flash clone"
-					description={<>I started coding making Flash games and animations. Recreating Flash as a webapp with Next.js and HTML5 Canvas was a rewarding full-circle moment. Try it out <a className="underline text-blue-500" href="/clone">here</a>.</>}
+					description={<>I started coding making Flash games and animations. Recreating Flash as a webapp with Next.js and HTML5 Canvas was a rewarding full-circle moment. Try it out <a className="underline text-blue-500" href="/clone">here</a>. (best on pc)</>}
 				/>
 				<ProjectCard
 					title="Anki addon"

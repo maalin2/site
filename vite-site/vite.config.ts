@@ -5,10 +5,19 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [react(), tailwindcss()],
   resolve: {
-  	alias: {
-		"@": path.resolve(__dirname, "./src"),
-	},
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        // Ensure all routes are handled by index.html
+        manualChunks: undefined
+      }
+    }
+  }
 })
