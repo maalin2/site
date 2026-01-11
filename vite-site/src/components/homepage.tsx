@@ -54,11 +54,11 @@ function ExperienceItem({ image, description }: ExperienceItemProps) {
 
 function Navigation() {
 	return (
-		<div className="bg-white fixed w-full z-50 pb-2 md:pb-4">
-			<NavigationMenu>
-				<NavigationMenuList>
+		<div className="bg-white border-b-solid border-b-1 fixed w-full z-50 pb-2 md:pb-4">
+			<NavigationMenu className="mt-1">
+				<NavigationMenuList className="gap-x-0">
 					<NavigationMenuItem>
-						<NavigationMenuLink id="home" className="tracking-tight scroll-m-20 font-semibold text-xs md:text-xl" href="/">
+						<NavigationMenuLink id="home" className="tracking-tight scroll-m-20 font-semibold text-xs md:text-lg" href="/">
 							mohammed maalin
 						</NavigationMenuLink>
 					</NavigationMenuItem>
