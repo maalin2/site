@@ -5,16 +5,15 @@ export function About() {
 				Hello!
 			</h2>
 			<p>
-				My name is Mohammed Maalin. I'm a graduate of{" "}
-				<span className="font-semibold text-red-600">The Ohio State University</span>, where I studied Computer
+				My name is Mohammed Maalin. I recently graduated from <span className="font-semibold text-red-600">The Ohio State University</span>, where I studied Computer
 				Science and Engineering with a specialization in Artificial Intelligence. I'm an incoming Software Engineer
-				at Wells Fargo.
+				at Wells Fargo, where I'll be working on AI tools.
 			</p>
 			<br />
 			<p>
-				I've been programming since middle school, starting with small games and websites. Since then, I've spent a
-				lot of time building full-stack apps and AI systems. When I'm not programming, I like watching films,
-				listening to music, playing chess, and reading about technology and business.
+				I've been coding since middle school and enjoy turning rough ideas into useful, polished software. My work has ranged
+				from small websites and personal projects to larger engineering projects at Wells Fargo and beyond. I'm especially drawn
+				to products where engineering, design, and real user problems meet. Outside of technology, I enjoy film and chess.
 			</p>
 			<br />
 		</section>
