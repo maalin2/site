@@ -47,7 +47,7 @@ const projects: Project[] = [
 		link: {
 			prefix: "You can try it out",
 			text: "here",
-			href: "https://flash-clone-3.vercel.app/",
+			href: "/clone",
 		},
 	},
 	{
